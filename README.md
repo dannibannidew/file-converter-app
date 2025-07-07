@@ -39,7 +39,7 @@ A modern web application for converting various file formats including images, a
 
 1. **Clone the repository**
    ```bash
-   git clone <your-repo-url>
+   git clone (https://github.com/dannibannidew/file-converter-app)
    cd FileConverter
    ```
 
