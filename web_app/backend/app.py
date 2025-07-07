@@ -14,9 +14,14 @@ def configure_ffmpeg():
     try:
         from pydub import AudioSegment
         
-        # Get the directory where this script is located
+        # Check if we're in a cloud environment
+        if os.environ.get('RAILWAY_ENVIRONMENT') or os.environ.get('RENDER') or os.environ.get('HEROKU'):
+            # In cloud environment, use system ffmpeg
+            print("Running in cloud environment, using system FFmpeg")
+            return True
+        
+        # Local environment - try to use local ffmpeg
         current_dir = os.path.dirname(os.path.abspath(__file__))
-        # Go up to the project root and then to ffmpeg bin directory
         project_root = os.path.dirname(os.path.dirname(current_dir))
         ffmpeg_bin = os.path.join(project_root, 'ffmpeg-master-latest-win64-gpl', 'bin')
         
@@ -130,7 +135,7 @@ def upload_file():
         os.makedirs('outputs', exist_ok=True)
         
         # Save file with unique name
-        filename = secure_filename(file.filename)
+        filename = secure_filename(file.filename or 'unknown')
         unique_filename = f"{uuid.uuid4()}_{filename}"
         file_path = os.path.join('uploads', unique_filename)
         file.save(file_path)
@@ -441,4 +446,7 @@ if __name__ == '__main__':
     cleanup_old_files()
     print("File Converter API started with automatic cleanup enabled")
     print("Files will be kept for 1 hour before automatic deletion")
-    app.run(debug=True, host='0.0.0.0', port=5000) 
+    
+    # Get port from environment variable (for cloud deployment)
+    port = int(os.environ.get('PORT', 5000))
+    app.run(debug=False, host='0.0.0.0', port=port) 

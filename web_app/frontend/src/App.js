@@ -85,7 +85,11 @@ function App() {
           alert(getTranslation(language, 'uploadFailed'));
         }
       } catch (error) {
-        alert(getTranslation(language, 'networkError'));
+        if (error.message.includes('Failed to fetch') || error.message.includes('NetworkError')) {
+          alert('Backend server is not available. Please run the backend locally or deploy it to a hosting service.');
+        } else {
+          alert(getTranslation(language, 'networkError'));
+        }
       }
     }
 
@@ -191,7 +195,11 @@ function App() {
 
       setConvertedFiles(newConvertedFiles);
     } catch (error) {
-      alert(getTranslation(language, 'networkError'));
+      if (error.message.includes('Failed to fetch') || error.message.includes('NetworkError')) {
+        alert('Backend server is not available. Please run the backend locally or deploy it to a hosting service.');
+      } else {
+        alert(getTranslation(language, 'networkError'));
+      }
     } finally {
       setIsConverting(false);
       setConvertingFiles(prev => {

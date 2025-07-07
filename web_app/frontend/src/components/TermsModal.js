@@ -27,7 +27,11 @@ const TermsModal = ({ isOpen, onClose, language, onAccept, isMandatory = false }
         setError(getTranslation(language, 'termsNotAvailable'));
       }
     } catch (err) {
-      setError(getTranslation(language, 'networkError'));
+      if (err.message.includes('Failed to fetch') || err.message.includes('NetworkError')) {
+        setError('Backend server is not available. Please run the backend locally or deploy it to a hosting service.');
+      } else {
+        setError(getTranslation(language, 'networkError'));
+      }
     } finally {
       setIsLoading(false);
     }
