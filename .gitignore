@@ -67,7 +67,8 @@ web_app/backend/uploads/
 web_app/backend/outputs/
 *.log
 
-# FFmpeg (if you want to exclude the binary files)
-# ffmpeg.exe
-# ffprobe.exe
-# ffmpeg-master-latest-win64-gpl/ 
+# FFmpeg (exclude large binary files)
+ffmpeg.exe
+ffprobe.exe
+ffmpeg.zip
+ffmpeg-master-latest-win64-gpl/ 

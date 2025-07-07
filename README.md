@@ -33,7 +33,7 @@ A modern web application for converting various file formats including images, a
 
 - Python 3.8+
 - Node.js 16+
-- FFmpeg (included in the project)
+- FFmpeg (see installation instructions below)
 
 ## Installation
 
@@ -43,13 +43,19 @@ A modern web application for converting various file formats including images, a
    cd FileConverter
    ```
 
-2. **Install Python dependencies**
+2. **Install FFmpeg**
+   - Download FFmpeg from: https://ffmpeg.org/download.html
+   - Extract to the project root directory
+   - Ensure `ffmpeg.exe` and `ffprobe.exe` are in the `ffmpeg-master-latest-win64-gpl/bin/` folder
+   - Or use the provided FFmpeg files (not included in repository due to size)
+
+3. **Install Python dependencies**
    ```bash
    cd web_app/backend
    pip install -r requirements.txt
    ```
 
-3. **Install Node.js dependencies**
+4. **Install Node.js dependencies**
    ```bash
    cd ../frontend
    npm install
@@ -108,7 +114,7 @@ FileConverter/
 │       │   └── translations.js   # Language translations
 │       ├── package.json          # Node.js dependencies
 │       └── tailwind.config.js    # Tailwind configuration
-├── ffmpeg-master-latest-win64-gpl/ # FFmpeg binaries
+├── ffmpeg-master-latest-win64-gpl/ # FFmpeg binaries (not in repo)
 ├── ico/                          # Application icons
 └── README.md                     # This file
 ```
