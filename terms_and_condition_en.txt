@@ -1,0 +1,19 @@
+Terms and Conditions 2025
+
+1. User Responsibility
+By using this service, you agree that you have the full legal right to upload and process the files you submit. You confirm that you are not violating any copyright, trademark, or data privacy laws by using this tool.
+
+2. Temporary File Storage
+Uploaded files are stored temporarily on our server for a maximum of 10 minutes. After this time, they are automatically and permanently deleted. No manual deletion is necessary, and no backups are made.
+
+3. Data Protection & GDPR Compliance
+This application is designed with privacy in mind. We do not collect or retain any personally identifiable information unless explicitly provided by the user.
+
+Files are not analyzed or processed beyond the selected conversion.
+
+No user behavior is tracked for profiling.
+
+In accordance with GDPR (General Data Protection Regulation), users retain full rights over their data and can contact the site owner for questions regarding data usage.
+
+4. Liability Disclaimer
+This service is provided "as is" without warranty of any kind. We are not liable for any data loss, misuse of converted files, or infringement caused by uploaded content.

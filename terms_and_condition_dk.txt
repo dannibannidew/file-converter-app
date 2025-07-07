@@ -1,0 +1,20 @@
+Vilkår og betingelser 2025
+
+1. Brugerens ansvar
+Ved brug af denne tjeneste bekræfter du, at du har fuld juridisk ret til at uploade og behandle de filer, du sender. Du erklærer, at du ikke overtræder nogen ophavsret, varemærker eller databeskyttelseslove ved brug af værktøjet.
+
+2. Midlertidig filopbevaring
+Filer, der uploades til hjemmesiden, gemmes midlertidigt i maksimalt 10 minutter. Derefter slettes de automatisk og permanent. Der foretages ingen backup eller manuel sletning.
+
+3. Databeskyttelse & GDPR-overholdelse
+Denne applikation er udviklet med fokus på privatliv.
+
+Der indsamles ingen personhenførbare oplysninger, medmindre du selv indtaster dem.
+
+Filer analyseres og behandles udelukkende med henblik på konvertering.
+
+Vi foretager ikke tracking eller profilering.
+I henhold til GDPR (Databeskyttelsesforordningen) har du ret til indsigt i og kontrol over dine data. Kontakt os for spørgsmål om databehandling.
+
+4. Ansvarsfraskrivelse
+Denne tjeneste stilles til rådighed "som den er", uden nogen form for garanti. Vi kan ikke drages til ansvar for tab af data, misbrug af konverterede filer eller lovovertrædelser begået via uploadet indhold.
